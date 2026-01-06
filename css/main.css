@@ -1,0 +1,93 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+h1 { color: #2c3e50; }
+h2 { color: #34495e; }
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+@keyframes hoverEffect {
+    0% { color: #2980b9; }
+    50% { color: #3498db; }
+    100% { color: #2980b9; }
+}
+
+a:hover {
+    text-decoration: underline;
+    animation: hoverEffect 0.3s ease-in-out;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.5s ease;
+}
+
+.footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+    text-align: center;
+}
+
+.secret {
+    opacity: 0.1;
+    transition: opacity 0.5s ease;
+    color: #000000;
+    text-decoration: none;
+}
+
+.secret:hover {
+    opacity: 1 !important;
+}
+
+.dark-mode-white-mode {
+    align-self: flex-start;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #2c3e50;
+    color: white;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dark-mode-white-mode:hover { transform: scale(1.1); }
+.dark-mode-white-mode:active { transform: scale(0.9); }
+
+/* Dark Mode logic - Only changes colors */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+body.dark-mode .container {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+body.dark-mode h1, body.dark-mode h2 { color: #ecf0f1; }
+body.dark-mode a { color: #3498db; }
+body.dark-mode .footer { color: #95a5a6; }
+body.dark-mode .secret { color: #ffffff; }
+
+body.dark-mode .dark-mode-white-mode {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
