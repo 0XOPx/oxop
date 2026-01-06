@@ -137,3 +137,23 @@ a:hover {
     color: #7f8c8d;
     text-align: center;
 }
+
+.github-info {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: left;
+    align-self: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+body.dark-mode .github-info {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.github-info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
