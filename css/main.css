@@ -89,6 +89,8 @@ body.dark-mode .secret { color: #ffffff; }
 body.dark-mode .dark-mode-white-mode {
     background-color: #ecf0f1;
     color: #2c3e50;
+}
+
 body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
@@ -157,4 +159,14 @@ body.dark-mode .github-info {
     margin: 5px 0;
     font-size: 0.9em;
     transition: box-shadow 0.5s ease;
+}
+
+.github-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+body.dark-mode .github-link {
+    text-decoration: none;
+    color: #ffffff;
 }

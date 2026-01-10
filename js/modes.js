@@ -5,14 +5,22 @@ function toggleDarkMode() {
     const isDark = body.classList.contains("dark-mode");
     localStorage.setItem("theme", isDark ? "dark" : "light");
     btn.textContent = isDark ? "Light Mode" : "Dark Mode";
+    const githubImgs = document.querySelectorAll('.github-link img');
+    githubImgs.forEach(img => {
+        img.src = isDark ? "/assets/white-github.png" : "/assets/github.png";
+    });
 }
 
 window.addEventListener("DOMContentLoaded", () => {
     const savedTheme = localStorage.getItem("theme");
     const btn = document.querySelector('button');
-    
-    if (savedTheme === "dark") {
+    const isDark = savedTheme === "dark";
+    if (isDark) {
         document.body.classList.add("dark-mode");
-        if(btn) btn.textContent = "Light Mode";
+        if (btn) btn.textContent = "Light Mode";
     }
+    const githubImgs = document.querySelectorAll('.github-link img');
+    githubImgs.forEach(img => {
+        img.src = isDark ? "/assets/white-github.png" : "/assets/github.png";
+    });
 });
