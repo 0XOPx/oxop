@@ -2,21 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* THE ACTUAL BODY STYLE */
 body {
-  margin: 20px !important; /* Forces the black gap around the site */
+  margin: 20px !important;
   font-family: Arial, sans-serif !important;
   display: flex;
   flex-direction: column;
   transition: background-color 0.5s ease, color 0.5s ease;
+  background-color: #000;
 }
 
 html {
-  background-color: #1a1a1a;
+  background-color: #000;
   transition: background-color 0.5s ease;
 }
 
-/* THE CONTAINER STYLE - Vertical and Narrow */
 .main-container {
   max-width: 800px;
   width: 100%;
@@ -28,7 +27,6 @@ html {
   transition: background-color 0.5s ease;
 }
 
-/* YOUR CUSTOM LINK ANIMATION */
 @keyframes hoverEffect {
   0%, 100% { color: #2980b9; }
   50% { color: #3498db; }
@@ -39,7 +37,6 @@ html {
   animation: hoverEffect 0.3s ease-in-out;
 }
 
-/* SECRET HOVER */
 .secret-tea {
   opacity: 0.1;
   transition: opacity 0.5s ease;

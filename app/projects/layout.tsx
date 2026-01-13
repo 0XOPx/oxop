@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
-import "./globals.css";
+import "../globals.css";
 
 export const metadata: Metadata = {
-    title: "OXOP BMP Official's site.",
+    title: "OXOP's Site - Projects",
     description: "Programmer from Poland | Black MIDI & coding projects"
 };
 

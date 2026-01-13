@@ -31,12 +31,6 @@ export default function Projects() {
           <Link href="/" className="text-[#2980b9] dark:text-[#3498db] mt-4 flex items-center gap-2 animate-hover-link">
             ← Back to Home
           </Link>
-
-          <div className="mt-8">
-            <a href="https://www.youtube.com/watch?v=QDia3e12czc" target="_blank" className="secret-link text-xs italic no-underline">
-              I like Ice Tea
-            </a>
-          </div>
         </div>
       </main>
 
