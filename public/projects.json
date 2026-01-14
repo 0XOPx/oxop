@@ -8,5 +8,10 @@
     "name": "Visual Studio Downloads",
     "description": "Right now, Visual Studio 2010 Express~Visual Studio 2026",
     "url": "https://vs-downloads.vercel.app/"
+  },
+  {
+    "name": "Tabliczka Mnożenia (If you only know English, this is not for you)",
+    "description": "Tabliczka Mnożenia",
+    "url": "https://github.com/0XOPx/Tabliczka-Mnozenia/releases/download/1.0/Tabliczka-Mnozenia-1.0.exe"
   }
 ]
